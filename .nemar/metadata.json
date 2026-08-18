@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study E — 6x6 checkerboard (8 healthy subjects)",
-  "description": "This dataset comprises EEG recordings from 8 healthy subjects (Study E) performing a P300-based brain-computer interface task using a 6x6 checkerboard visual stimulus paradigm. Recorded at 256 Hz from 16 channels using g.USBamp hardware, the data includes target and non-target event classifications for speller application development. This derivative dataset is part of the BigP3BCI study, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple stimulus paradigms.",
-  "methods_description": "EEG data were acquired at 256 Hz sampling rate from 16 channels using a standard 1020 montage with g.USBamp (g.tec) hardware. The experimental paradigm employed a 6x6 checkerboard visual stimulus presentation with target and non-target event classifications. Data were collected in a laboratory setting with online feedback provided to subjects. Trial intervals were defined as [0, 1.0] seconds with a 60 Hz line frequency.",
+  "description": "This dataset comprises EEG recordings from 8 healthy subjects performing a P300-based brain-computer interface task using a 6x6 checkerboard visual stimulus paradigm. Recorded at 256 Hz from 16 channels using a g.USBamp amplifier, the data includes target and non-target event classifications for speller application development. This derivative dataset is part of the BigP3BCI study, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across multiple stimulus paradigms.",
+  "methods_description": "EEG data were acquired at 256 Hz sampling rate from 16 channels using a g.USBamp (g.tec) amplifier with standard 10-20 electrode montage. The experimental paradigm employed a 6x6 checkerboard visual stimulus presentation with target and non-target event classifications. Each subject completed one session with a trial interval of 0-1.0 seconds. Data were processed using HED 8.4.0 event annotations and feature extraction based on P300 ERP detection.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,22 +22,35 @@
   },
   "keywords": [
     {
-      "term": "p300"
+      "term": "E1A-Associated p300 Protein",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D050881"
     },
     {
-      "term": "speller"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "EEG"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "visual evoked potentials"
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
     },
     {
-      "term": "event-related potentials"
+      "term": "speller application"
+    },
+    {
+      "term": "checkerboard paradigm"
     }
   ],
   "related_identifiers": [
@@ -84,5 +97,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "912078c9cc4896e7131075ca8791dba899694514fd2140c63ea06cbc05cfcd20"
+  "source_hash": "09b3d448b9139f77a1afca1476d8b1da0f964f4542aec6881f0f0f6fcacd25fd"
 }
