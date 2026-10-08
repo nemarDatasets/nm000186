@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study E — 6x6 checkerboard (8 healthy subjects)",
-  "description": "This dataset contains EEG recordings from 8 healthy participants in Study E of the BigP3BCI collection, in which a P300-based speller used a 6x6 character grid with a checkerboard stimulus paradigm. Data were recorded with 16 EEG channels at 256 Hz and annotated with Target and NonTarget events using HED. It is a MOABB-derived BIDS version of the PhysioNet bigP3BCI dataset, intended for benchmarking P300 brain-computer interface classification.",
-  "methods_description": "EEG was recorded with a g.USBamp (g.tec) amplifier using 16 channels placed according to the standard 10-20 montage, sampled at 256 Hz, with a 60 Hz line frequency. Participants performed a P300 speller task with visual stimulation on a 6x6 grid, with online feedback in a laboratory setting. Events were labeled Target or NonTarget, with a trial interval of 0-1.0 s.",
+  "description": "This dataset contains EEG recordings from 8 healthy participants in Study E of the bigP3BCI collection. Participants used a P300-based speller with a 6x6 checkerboard character grid, and the recordings are labeled Target and NonTarget. Data were acquired with 16 EEG channels at 256 Hz using a g.USBamp amplifier. The dataset is a BIDS-formatted derivative of the PhysioNet bigP3BCI release, prepared with MOABB.",
+  "methods_description": "EEG was recorded from 16 channels placed according to the standard 10-20 montage, using a g.USBamp (g.tec) amplifier at a 256 Hz sampling rate. Each participant completed one session of a P300 speller task with a 6x6 checkerboard paradigm in a laboratory. Online feedback was given, and the protocol was calibration followed by test. Events were annotated as Target or NonTarget and tagged with HED.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,10 +28,7 @@
       "term": "P300"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
       "term": "speller"
@@ -82,10 +79,11 @@
     ".bdf",
     ".edf",
     ".json",
+    ".jsonl",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "09b3d448b9139f77a1afca1476d8b1da0f964f4542aec6881f0f0f6fcacd25fd"
+  "source_hash": "47fe38fbf5f53e40830c48123423a799d101c330ce189225cde4bd6c8b14763c"
 }
