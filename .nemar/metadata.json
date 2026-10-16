@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study E — 6x6 checkerboard (8 healthy subjects)",
-  "description": "This dataset contains EEG recordings from 8 healthy participants in Study E of the bigP3BCI collection. Participants used a P300-based speller with a 6x6 checkerboard character grid, and the recordings are labeled Target and NonTarget. Data were acquired with 16 EEG channels at 256 Hz using a g.USBamp amplifier. The dataset is a BIDS-formatted derivative of the PhysioNet bigP3BCI release, prepared with MOABB.",
-  "methods_description": "EEG was recorded from 16 channels placed according to the standard 10-20 montage, using a g.USBamp (g.tec) amplifier at a 256 Hz sampling rate. Each participant completed one session of a P300 speller task with a 6x6 checkerboard paradigm in a laboratory. Online feedback was given, and the protocol was calibration followed by test. Events were annotated as Target or NonTarget and tagged with HED.",
+  "description": "This dataset contains 16-channel EEG recordings from 8 healthy participants performing a P300-based brain-computer interface speller task with a 6x6 checkerboard character grid. It is Study E of the larger bigP3BCI collection, which spans about 267 subjects across 20 studies. The data are provided in BIDS format with HED event annotations for target and non-target visual stimuli, and are suited to P300 detection and BCI benchmarking.",
+  "methods_description": "EEG was recorded with a g.USBamp (g.tec) amplifier at 256 Hz from 16 channels placed according to the standard 10-20 montage, with 60 Hz line frequency. Participants completed a visual P300 speller task in a laboratory with online feedback, using a calibration-then-test scheme. Events were labeled Target or NonTarget, with a trial interval of 0 to 1.0 s.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,16 +28,19 @@
       "term": "P300"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "speller"
     },
     {
-      "term": "event-related potentials"
+      "term": "visual perception"
     },
     {
-      "term": "visual perception"
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -82,8 +85,9 @@
     ".jsonl",
     ".md",
     ".tsv",
+    ".txt",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "47fe38fbf5f53e40830c48123423a799d101c330ce189225cde4bd6c8b14763c"
+  "source_hash": "f25b9900f9142b33d2c751ab361f5f7e8e8d483cfbc15340f93decd4ef042fa5"
 }
