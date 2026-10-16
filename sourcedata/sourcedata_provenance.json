@@ -7,8 +7,8 @@
  "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-Mainsah2025-data/bigP3BCI-data/StudyE",
  "license": "CC-BY-4.0",
  "doi": "10.13026/0byy-ry86",
- "n_files": 88,
- "total_bytes": 433667984,
+ "n_files": 89,
+ "total_bytes": 434648899,
  "files": [
   {
    "file": "E_01/SE001/Test/CB/E_01_SE001_CB_Test01.edf",
@@ -713,11 +713,28 @@
    "scope": "subject",
    "how": "data_path",
    "subject": "8"
+  },
+  {
+   "file": "SHA256SUMS.txt",
+   "bytes": 980915,
+   "sha256": "75ce052ae8626a73b43887c994c4c0d17e5b0d775ad3083f759af20028e32fbb",
+   "subject": null,
+   "url": "https://physionet.org/files/bigp3bci/1.0.0/SHA256SUMS.txt",
+   "how": "loader index: PhysioNet bigP3BCI 1.0.0 SHA256SUMS.txt, byte-identical at physionet.org/files and physionet-open.s3.amazonaws.com; read by moabb.datasets.download.download_if_missing before the recordings; retrieved 2026-10-16"
   }
  ],
  "n_subjects_recorded": 8,
  "n_subject_scoped_files": 88,
  "n_dataset_scoped_files": 0,
  "scope_semantics": "Each file carries scope=subject or scope=dataset. scope=subject files have a subject field and belong to that subject alone. scope=dataset files belong to no single subject -- a montage, a README, band or interval definitions -- and are needed whichever subject is fetched. The how field records which rule decided: data_path (moabb returned it for exactly one subject), returned_for_several_subjects, sibling_of_subject_file (a companion such as an EEGLAB .fdt, inherited from a directory whose attributed files all share one subject), or not_returned_by_data_path.",
- "privacy_correction": "2026-10-06: identification fields in the headers of the recording files were scrubbed in place; the checksums in this file describe the original upstream files, not the scrubbed copies in this dataset."
+ "privacy_correction": "2026-10-06: identification fields in the headers of the recording files were scrubbed in place; the checksums in this file describe the original upstream files, not the scrubbed copies in this dataset.",
+ "revisions": [
+  {
+   "date": "2026-10-16",
+   "version": "1.0.4",
+   "added_files": 1,
+   "added_bytes": 980915,
+   "note": "Added SHA256SUMS.txt: PhysioNet's checksum index of bigP3BCI 1.0.0 (https://physionet.org/files/bigp3bci/1.0.0/SHA256SUMS.txt), byte-identical to https://physionet-open.s3.amazonaws.com/bigp3bci/1.0.0/SHA256SUMS.txt, retrieved 2026-10-16. MOABB's Mainsah2025 loader reads it (download_if_missing) to list the recordings of StudyE before fetching them; with the file at the root of sourcedata/ the loader takes it from this deposit (lookup by the URL's file name). Checked: 88 of 88 deposited files are in it under bigP3BCI-data/StudyE/ with the same SHA-256. Subject-less entry: shared by every subject's load."
+  }
+ ]
 }
